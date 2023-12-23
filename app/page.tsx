@@ -7,6 +7,7 @@ export default function Home() {
     <main>
       <h1>Hello World</h1>
       <ProductCard />
+      <button className="btn btn-info">button</button>
     </main>
   )
 }
