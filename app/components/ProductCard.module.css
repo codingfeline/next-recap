@@ -1,0 +1,6 @@
+.test {
+  @apply text-red-500 italic;
+}
+.test2 {
+  @apply bg-black;
+}
