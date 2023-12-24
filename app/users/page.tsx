@@ -1,9 +1,21 @@
 import React from 'react'
+import UserTable from '../components/UserTable'
 
-export default function page() {
+interface Props {
+  searchParams: { sortOrder: string }
+}
+const UsersPage = async ({ searchParams: { sortOrder } }: Props) => {
   return (
-    <div>
-      <h1>UsersPage</h1>
-    </div>
+    <>
+      <h1>Users</h1>
+      <UserTable sortOrder={sortOrder} />
+    </>
   )
 }
+
+export default UsersPage
+
+/*
+next caching using fetch
+next: { revalidate: 10, for 10 seconds }
+*/
