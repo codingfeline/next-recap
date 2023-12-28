@@ -19,4 +19,11 @@ model User {
   registeredAt DateTime @default(now())
 }
 
+model Product {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  name  String
+  price Float
+}
+
 // npx prisma db push
+// https://forum.codewithmosh.com/t/eperm-operation-not-permitted/22684
