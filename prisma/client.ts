@@ -21,3 +21,6 @@ export const prisma = globalThis.prisma ?? prismaClientSingleton()
 if (process.env.NODE_ENV !== 'production') globalThis.prisma = prisma
 
 // https://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices
+
+// https://authjs.dev/reference/adapter/prisma?_gl=1*nw08qj*_gcl_au*MjEyOTEzMDM4NC4xNzAzODQ3NTQz
+// * npm i @next-auth/prisma-adapter instead of @auth/prisma-adapter
