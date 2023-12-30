@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div className="flex gap-1 bg-slate-200 p-3 space-x-3">
-      <Link href="/">Home</Link>
+      <Link href="/">Home Sweet Home</Link>
       <Link href="/users">Users</Link>
       <Link href="/other">Other</Link>
       {/* {status === 'loading' && <div>Loading...</div>} */}
