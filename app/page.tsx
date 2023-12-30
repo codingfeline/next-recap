@@ -4,12 +4,15 @@ import ProductCard from './components/ProductCard'
 import { getServerSession } from 'next-auth'
 import { authOptions } from './api/auth/[...nextauth]/route'
 import logo from '@/public/Rectangle1.png'
+import { Metadata } from 'next'
+import { useState } from 'react'
 
 export default async function Home() {
   const session = await getServerSession(authOptions)
   return (
     <main>
       <h1>Hello World {session && <span>{session.user!.name}</span>}</h1>
+      <h2 className="font-poppins">welcome</h2>
       <ProductCard />
       <button className="btn btn-info">button</button>
       <Image src={logo} alt="logo" />
@@ -25,4 +28,19 @@ export default async function Home() {
       />
     </main>
   )
+}
+
+// export const metadata: Metadata = {
+//   title: 'Home page',
+//   description: 'Home description',
+// }
+
+// * either above or below, NOT both
+
+export async function generateMetadata(): Promise<Metadata> {
+  const product = { title: 'individual title', description: 'other descriptions' } //await fetch('')
+  return {
+    title: product.title,
+    description: product.description,
+  }
 }
