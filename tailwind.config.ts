@@ -20,7 +20,7 @@ const config: Config = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['valentine', 'retro'],
+    themes: ['valentine', 'retro', 'winter'], //? needs to add to markup too
   }
 }
 export default config

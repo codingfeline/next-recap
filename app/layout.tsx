@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="retro">
+    <html lang="en" data-theme="winter">
       <body className={poppins.variable}>
         <AuthProvider>
           <NavBar></NavBar>
