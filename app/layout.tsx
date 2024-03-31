@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" data-theme="winter">
       <body className={poppins.variable}>
         <AuthProvider>
-          <NavBar></NavBar>
+          <NavBar />
           {children}
         </AuthProvider>
       </body>
